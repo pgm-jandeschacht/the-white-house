@@ -46,7 +46,55 @@ function register_president_post_type() {
 			'editor',
 			'thumbnail',
 		],
+        'rewrite'             => true
 	]);
 }
 
 add_action( 'init', 'register_president_post_type' );
+
+function register_administration_post_type() {
+    register_post_type( 'administration', [
+        'label'  => esc_html__( 'Administration members', 'text-domain' ),
+        'labels' => [
+            'menu_name'          => esc_html__( 'Administration', 'presidential' ),
+            'name_admin_bar'     => esc_html__( 'Administration member', 'presidential' ),
+            'add_new'            => esc_html__( 'Add Administration member', 'presidential' ),
+            'add_new_item'       => esc_html__( 'Add new Administration member', 'presidential' ),
+            'new_item'           => esc_html__( 'New Administration member', 'presidential' ),
+            'edit_item'          => esc_html__( 'Edit Administration member', 'presidential' ),
+            'view_item'          => esc_html__( 'View Administration member', 'presidential' ),
+            'update_item'        => esc_html__( 'View Administration member', 'presidential' ),
+            'all_items'          => esc_html__( 'All Administration members', 'presidential' ),
+            'search_items'       => esc_html__( 'Search Administration members', 'presidential' ),
+            'parent_item_colon'  => esc_html__( 'Parent Administration member', 'presidential' ),
+            'not_found'          => esc_html__( 'No Administration members found', 'presidential' ),
+            'not_found_in_trash' => esc_html__( 'No Administration members found in Trash', 'presidential' ),
+            'name'               => esc_html__( 'The Biden-Harris Administration', 'presidential' ),
+            'singular_name'      => esc_html__( 'Administration member', 'presidential' ),
+        ],
+        'public'              => true,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'show_ui'             => true,
+        'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'show_in_rest'        => true,
+        'capability_type'     => 'post',
+        'hierarchical'        => false,
+        'has_archive'         => 'administration',
+        'query_var'           => true,
+        'can_export'          => true,
+        'rewrite_no_front'    => false,
+        'show_in_menu'        => true,
+        'menu_position'       => 4,
+        'menu_icon'           => 'dashicons-admin-generic',
+        'supports' => [
+            'title',
+            'editor',
+            'thumbnail',
+        ],
+        'rewrite'             => true
+    ]);
+}
+
+add_action( 'init', 'register_administration_post_type' );

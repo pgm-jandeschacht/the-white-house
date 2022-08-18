@@ -23,7 +23,10 @@ module.exports = {
       },
       breakPoints: {
         ...customTheme.breakPoints,
-      }
+      },
+      maxWidth: {
+        ...customTheme.maxWidth,
+      },
     },
   },
   plugins: [],

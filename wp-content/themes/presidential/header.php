@@ -8,14 +8,24 @@
         <?php wp_head(); ?>
     </head>
     <body>
-        <nav>
+        <nav class="px-[25px] flex justify-between">
+            <div>
+                <a href="<?php home_url() ?>" class="font-mercury text-[18.85px] font-semibold leading-4 tracking-widest uppercase hover:text-red-hover transition-all duration-200 ease-in-out">
+                    <?php _e('The White House', 'presidential') ?>
+                </a>
+            </div>
+
+            <div>
+                Burger menu
+            </div>
+
             <!-- <?php
                 if (has_custom_logo()) {
                     the_custom_logo();
                 } 
             ?> -->
 
-            <ul>
+            <!-- <ul>
                 <?php
                     // Check if the menu exists
                     if (has_nav_menu('primary_menu')) {
@@ -29,7 +39,7 @@
                         ]);
                     }
                 ?>
-            </ul>
+            </ul> -->
         </nav>
 
         

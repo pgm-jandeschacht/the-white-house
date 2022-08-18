@@ -3,7 +3,8 @@
 function register_custom_menu() {
     register_nav_menus([
         'primary_menu' => 'Primary Menu',
-        'social_menu' => 'Social Media Menu'
+        'secondary_menu' => 'Secondary Menu',
+        'social_menu' => 'Social Media Menu',
     ]);
 }
 

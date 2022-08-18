@@ -1,3 +1,8 @@
 .max-width {
     @apply max-w-[1290px] m-auto;
 }
+
+.max-width-half {
+    max-width: 50%;
+    @apply m-auto;
+}

@@ -1,9 +1,9 @@
 .title-blue {
-    @apply text-[31px] md:text-[34px] lg:text-xxl uppercase text-primary font-mercury font-semibold text-center;
+    @apply leading-[108%] text-[31px] md:text-[34px] lg:text-xxl uppercase text-primary font-mercury font-semibold text-center;
 }
 
 .title-white {
-    @apply text-[31px] md:text-[34px] lg:text-xxl uppercase text-white font-mercury font-semibold text-center;
+    @apply leading-[108%] text-[31px] md:text-[34px] lg:text-xxl uppercase text-white font-mercury font-semibold text-center;
 }
 
 .link-hover {

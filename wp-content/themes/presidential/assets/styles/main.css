@@ -14,3 +14,7 @@
 body {
     @apply font-decimal text-primary;
 }
+
+::selection {
+    @apply bg-red-hover text-white;
+}
