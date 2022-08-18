@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+/* custom classes */
+@import "base/type.css";
+@import "pages/login.css";
+
+@tailwind utilities;
+
+body {
+  background: red
+}

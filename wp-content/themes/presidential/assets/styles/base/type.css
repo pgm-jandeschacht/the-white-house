@@ -1,0 +1,5 @@
+/* import font face and declare fonts */
+
+.text-test {
+    @apply text-gray-400 text-xl uppercase;
+}
