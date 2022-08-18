@@ -2,11 +2,15 @@
 @tailwind components;
 
 /* custom classes */
-@import "base/type.css";
+@import "base/fonts.css";
+@import "base/normalize.css";
+@import "base/typography.css";
+@import "base/responsive.css";
 @import "pages/login.css";
+@import "components/cards.css";
 
 @tailwind utilities;
 
 body {
-  background: red
+    @apply font-decimal text-primary;
 }

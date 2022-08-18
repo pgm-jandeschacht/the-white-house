@@ -9,11 +9,11 @@
     </head>
     <body>
         <nav>
-            <?php
+            <!-- <?php
                 if (has_custom_logo()) {
                     the_custom_logo();
                 } 
-            ?>
+            ?> -->
 
             <ul>
                 <?php
@@ -33,7 +33,7 @@
         </nav>
 
         
-        <?php if (is_user_logged_in()) : ?>
+        <!-- <?php if (is_user_logged_in()) : ?>
             <a href="<?php echo wp_logout_url(home_url()) ?>">
                 <?php _e('Logout', 'presidential') ?>
             </a>
@@ -41,4 +41,4 @@
             <a href="<?php echo wp_registration_url() ?>">
                 <?php _e('Register', 'presidential') ?>
             </a>
-        <?php endif ?>
+        <?php endif ?> -->

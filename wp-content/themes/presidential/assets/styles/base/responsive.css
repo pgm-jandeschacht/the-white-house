@@ -1,0 +1,3 @@
+.max-width {
+    @apply max-w-[1290px] m-auto;
+}

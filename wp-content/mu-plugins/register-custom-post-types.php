@@ -33,7 +33,8 @@ function register_president_post_type() {
 		'show_in_rest'        => true,
 		'capability_type'     => 'post',
 		'hierarchical'        => false,
-		'has_archive'         => 'presidents',
+		'has_archive'         => 'about-the-white-house/presidents',
+        'rewrite'             => array( 'slug' => 'about-the-white-house/presidents'),
 		'query_var'           => true,
 		'can_export'          => true,
 		'rewrite_no_front'    => false,
@@ -45,8 +46,6 @@ function register_president_post_type() {
 			'editor',
 			'thumbnail',
 		],
-		
-		'rewrite' => true
 	]);
 }
 

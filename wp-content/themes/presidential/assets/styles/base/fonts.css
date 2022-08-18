@@ -1,0 +1,56 @@
+/* import font face and declare fonts */
+
+@font-face {
+    font-family: 'Decimal';
+    src: url('../fonts/decimal-book.woff2') format('woff2'),
+         url('../fonts/decimal-book.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Decimal';
+    src: url('../fonts/decimal-medium.woff2') format('woff2'),
+         url('../fonts/decimal-medium.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Decimal';
+    src: url('../fonts/decimal-semibold.woff2') format('woff2'),
+         url('../fonts/decimal-semibold.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Decimal';
+    src: url('../fonts/decimal-bold.woff2') format('woff2'),
+         url('../fonts/decimal-bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Mercury';
+    src: url('../fonts/mercury-book.woff2') format('woff2'),
+         url('../fonts/mercury-book.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Mercury';
+    src: url('../fonts/mercury-semibold.woff2') format('woff2'),
+         url('../fonts/mercury-semibold.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Mercury';
+    src: url('../fonts/mercury-bold.woff2') format('woff2'),
+         url('../fonts/mercury-bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}

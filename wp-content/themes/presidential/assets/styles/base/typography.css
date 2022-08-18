@@ -1,0 +1,11 @@
+.title-blue {
+    @apply text-[31px] md:text-[34px] lg:text-xxl uppercase text-primary font-mercury font-semibold text-center;
+}
+
+.title-white {
+    @apply text-[31px] md:text-[34px] lg:text-xxl uppercase text-white font-mercury font-semibold text-center;
+}
+
+.link-hover {
+    @apply uppercase text-xxs text-secondary-blue hover:text-red-hover transition-all duration-200 ease-in-out border-b border-transparent hover:border-red-hover;
+}
