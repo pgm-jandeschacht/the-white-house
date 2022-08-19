@@ -9,6 +9,7 @@
 @import "pages/login.css";
 @import "components/burger.css";
 @import "components/cards.css";
+@import "components/forms.css";
 
 @tailwind utilities;
 

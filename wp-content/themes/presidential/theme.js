@@ -5,7 +5,9 @@ module.exports = {
     "red-hover": "#9c1919",
     "white": "#fff",
     "secondary-blue": "#0064bc",
+    "secondary-blue-hover": "#184089",
     "line": "#e0e5ef",
+    "secondary-alt": "#fffbec",
     "secondary-brown": "#876450",
   },
   fontSize: {
