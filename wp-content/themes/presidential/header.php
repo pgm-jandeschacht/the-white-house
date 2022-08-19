@@ -7,7 +7,7 @@
 
         <?php wp_head(); ?>
     </head>
-    <body class="relative">
+    <body class="relative" x-data="{ open: false }">
         <header class="sticky top-0 z-10 h-[56px] bg-white">
             <nav class="px-5 md:px-[25px] xl:px-10 flex justify-between items-stretch h-full">
                 <div class="flex items-center">
@@ -16,22 +16,26 @@
                             <?php _e('The White House', 'presidential') ?>
                         </span>
 
-                        <img width="103" height="15" class="" src="<?php echo get_theme_file_uri('assets/images/text-logo.svg'); ?>">
+                        <img width="103" height="15" class="block md:hidden" src="<?php echo get_theme_file_uri('assets/images/text-logo.svg'); ?>">
                     </a>
                 </div>
     
-                <button class="group wrapper flex justify-center md:relative md:bottom-auto md:right-auto md:h-full">
+                <button @click="open = ! open" class="group wrapper flex justify-center md:relative md:bottom-auto md:right-auto md:h-full">
                     <div class="flex w-full h-full flex-col justify-center">
-                        <span class="burger-inner-wrapper group-hover:translate-y-[-2px]">
-                            <span class="md:burger-top"></span>
+                        <span class="burger-inner-wrapper group-hover:scale-110 group-hover:translate-y-[-2px]">
+                            <span class="burger-top" :class="open ? 'hidden' : 'block'"></span>
                         </span>
-    
-                        <span class="burger-text">
-                            <?php _e('Menu', 'presidential') ?>
-                        </span>
-    
-                        <span class="burger-inner-wrapper group-hover:translate-y-[2px]">
-                            <span class="md:burger-bottom"></span>
+        
+                            <span class="burger-text" x-show="!open">
+                                <?php _e('Menu', 'presidential') ?>
+                            </span>
+
+                            <span class="burger-text" x-show="open">
+                                <?php _e('Close', 'presidential') ?>
+                            </span>
+
+                        <span class="burger-inner-wrapper" :class="open ? 'h-[40px]' : 'group-hover:translate-y-[2px] group-hover:scale-110'">
+                            <span class="burger-bottom" :class="open ? 'close' : ''"></span>
                         </span>
                     </div>
                 </button>
@@ -43,6 +47,8 @@
                         } 
                     ?>
                 </div>
+
+                <?php get_template_part('components/menu'); ?>
     
                 <!-- <ul>
                     <?php
@@ -61,6 +67,8 @@
                 </ul> -->
             </nav>
         </header>
+
+        <main class="max-width" x-show="!open">
 
         
         <!-- <?php if (is_user_logged_in()) : ?>
