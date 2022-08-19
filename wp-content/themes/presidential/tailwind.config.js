@@ -30,6 +30,9 @@ module.exports = {
       willChange: {
         ...customTheme.willChange,
       },
+      boxShadow: {
+        ...customTheme.boxShadow,
+      },
     },
   },
   plugins: [],

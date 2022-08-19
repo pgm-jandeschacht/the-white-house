@@ -31,4 +31,7 @@ module.exports = {
   willChange: {
     'transform-color': 'transform, color',
   },
+  boxShadow: {
+    'menu': '0 0 60px rgb(10 36 88 / 45%)'
+  }
 }

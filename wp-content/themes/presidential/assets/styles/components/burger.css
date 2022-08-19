@@ -1,5 +1,5 @@
 .wrapper {
-    @apply w-[50px] ml-[4px] z-50 px-[0.375rem] py-1;
+    @apply w-[70px] h-[70px] md:h-auto md:w-[50px] ml-[4px] z-50 px-[0.375rem] py-1 rounded-[50%] shadow-menu fixed right-[15px] bottom-[15px] border-[3px] border-primary md:border-0 bg-white;
 }
 
 .burger-inner-wrapper {
@@ -19,5 +19,5 @@
 }
 
 .burger-text {
-    @apply flex justify-center leading-7 uppercase tracking-wider font-semibold text-[10px] group-hover:text-red-hover transition-all duration-200 ease-in-out;
+    @apply flex justify-center leading-7 uppercase tracking-wider font-semibold text-[10px] md:group-hover:text-red-hover transition-all duration-200 ease-in-out;
 }
