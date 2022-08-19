@@ -11,7 +11,7 @@
                         <?php the_title(); ?>
                     </h2>
 
-                    <p class="mt-[2px] uppercase text-[10px] md:text-[11px] md:group-hover:text-red-hover transition-all duration-200 ease-in-out">
+                    <p class="mt-[2px] font-medium uppercase text-[10px] md:text-[11px] md:group-hover:text-red-hover transition-all duration-200 ease-in-out">
                         <?php _e('The', 'presidential'); ?> <?php the_field('order_of_president'); ?> <?php _e('president of the United States', 'presidential'); ?>
                     </p>
                 </a>

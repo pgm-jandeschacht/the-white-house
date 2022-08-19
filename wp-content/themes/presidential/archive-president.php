@@ -3,7 +3,7 @@
     get_header();
 
     // ? Best way?
-    $page_object = get_page_by_title( 'about' );
+    $page_object = get_page_by_title( 'the white house' );
     $page_id = $page_object->ID;
 ?>
 

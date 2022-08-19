@@ -24,5 +24,8 @@ module.exports = {
     'one-third': '33.333333%',
     'half': '50%',
     'two-thirds': '66.666666%',
-  }
+  },
+  willChange: {
+    'transform-color': 'transform, color',
+  },
 }

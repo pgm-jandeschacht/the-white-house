@@ -7,6 +7,7 @@
 @import "base/typography.css";
 @import "base/responsive.css";
 @import "pages/login.css";
+@import "components/burger.css";
 @import "components/cards.css";
 
 @tailwind utilities;
