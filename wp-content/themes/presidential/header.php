@@ -9,7 +9,7 @@
     </head>
     <body>
         <header class="sticky top-0 z-10 h-[56px] bg-white">
-            <nav class="px-[25px] flex justify-between items-stretch h-full">
+            <nav class="px-5 md:px-[25px] xl:px-10 flex justify-between items-stretch h-full">
                 <div class="flex items-center">
                     <a href="<?php echo home_url('/') ?>" class="font-mercury text-[18.85px] font-semibold leading-4 tracking-widest uppercase hover:text-red-hover transition-all duration-200 ease-in-out">
                         <?php _e('The White House', 'presidential') ?>

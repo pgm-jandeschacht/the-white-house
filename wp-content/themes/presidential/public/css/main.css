@@ -1014,16 +1014,16 @@ video {
   right: auto;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-0 {
   right: 0px;
 }
 
 .top-\[8px\] {
   top: 8px;
-}
-
-.left-0 {
-  left: 0px;
 }
 
 .z-10 {
@@ -1069,6 +1069,22 @@ video {
 
 .mt-\[2px\] {
   margin-top: 2px;
+}
+
+.ml-\[10px\] {
+  margin-left: 10px;
+}
+
+.mr-\[10px\] {
+  margin-right: 10px;
+}
+
+.ml-\[-10px\] {
+  margin-left: -10px;
+}
+
+.mr-\[-10px\] {
+  margin-right: -10px;
 }
 
 .block {
@@ -1155,12 +1171,35 @@ video {
   padding-right: 10px;
 }
 
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-\[35px\] {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
 .pt-\[85px\] {
   padding-top: 85px;
 }
 
 .pb-\[30px\] {
   padding-bottom: 30px;
+}
+
+.pb-\[25px\] {
+  padding-bottom: 25px;
+}
+
+.pb-\[50px\] {
+  padding-bottom: 50px;
 }
 
 .font-mercury {
@@ -1202,6 +1241,10 @@ video {
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.leading-\[176\%\] {
+  line-height: 176%;
 }
 
 .leading-4 {
@@ -1267,11 +1310,6 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:bg-secondary:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 190 135 / var(--tw-bg-opacity));
-}
-
 .hover\:text-red-hover:hover {
   --tw-text-opacity: 1;
   color: rgb(156 25 25 / var(--tw-text-opacity));
@@ -1287,17 +1325,6 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.group:hover .group-hover\:scale-110 {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:bg-red-hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 25 25 / var(--tw-bg-opacity));
-}
-
 @media (min-width: 640px) {
 
   .sm\:w-1\/2 {
@@ -1309,6 +1336,11 @@ body {
 
   .md\:max-w-two-thirds {
     max-width: 66.666666%;
+  }
+
+  .md\:px-\[25px\] {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .md\:text-\[15px\] {
@@ -1338,6 +1370,14 @@ body {
 
   .lg\:max-w-half {
     max-width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .xl\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 

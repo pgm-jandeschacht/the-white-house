@@ -19,6 +19,7 @@ module.exports = {
     'sm': '576px',
     'md': '768px',
     'lg': '992px',
+    'xl': '1250px',
   },
   maxWidth: {
     'one-third': '33.333333%',
