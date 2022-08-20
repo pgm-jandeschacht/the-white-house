@@ -1,3 +1,26 @@
 .wrapper-navigation {
     @apply fixed bg-white w-full h-full left-0 z-40;
 }
+
+.navigation-header {
+    @apply w-full bg-white px-10 pt-10 absolute flex justify-start;
+}
+
+.navigation-body-outer {
+    height: calc(100% - 180px);
+    @apply w-full px-4 pt-[20px] pb-[10px] mt-[180px] overflow-y-auto z-50;
+}
+
+.navigation-body-inner {
+    @apply w-full flex;
+}
+
+.navigation-body-main {
+    min-width: calc(75% - 50px);
+    @apply mr-[100px] flex justify-between;
+}
+
+.navigation-body-side {
+    min-width: calc(25% - 50px);
+    @apply border-l-[1px] border-line pl-5 pb-5;
+}

@@ -33,6 +33,12 @@ module.exports = {
       boxShadow: {
         ...customTheme.boxShadow,
       },
+      spacing: {
+        ...customTheme.spacing,
+      },
+      borderWidth: {
+        ...customTheme.borderWidth,
+      },
     },
   },
   plugins: [],

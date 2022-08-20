@@ -2,7 +2,9 @@
 
 function register_custom_menu() {
     register_nav_menus([
-        'primary_menu' => 'Primary Menu',
+        'primary_menu_left' => 'Primary Menu Left',
+        'primary_menu_middle' => 'Primary Menu Middle',
+        'primary_menu_right' => 'Primary Menu Right',
         'secondary_menu' => 'Secondary Menu',
         'social_menu' => 'Social Media Menu',
     ]);

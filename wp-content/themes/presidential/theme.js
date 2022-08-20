@@ -9,6 +9,7 @@ module.exports = {
     "line": "#e0e5ef",
     "secondary-alt": "#fffbec",
     "secondary-brown": "#876450",
+    "line-dark": "rgba(10, 36, 88, 0.25)",
   },
   fontSize: {
     'xxs': '0.625rem',
@@ -27,11 +28,19 @@ module.exports = {
     'one-third': '33.333333%',
     'half': '50%',
     'two-thirds': '66.666666%',
+    'menu': '39%',
   },
   willChange: {
     'transform-color': 'transform, color',
   },
   boxShadow: {
     'menu': '0 0 60px rgb(10 36 88 / 45%)'
+  },
+  spacing: {
+    '1025': '-10.25%',
+    '29': '-29%'
+  },
+  borderWidth: {
+    '1': '1px',
   }
 }

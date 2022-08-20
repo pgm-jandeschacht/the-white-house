@@ -26,5 +26,7 @@
     "/public/fonts/mercury-book.woff2": "/public/fonts/mercury-book.woff2",
     "/public/fonts/mercury-semibold.woff": "/public/fonts/mercury-semibold.woff",
     "/public/fonts/mercury-semibold.woff2": "/public/fonts/mercury-semibold.woff2",
-    "/public/images/text-logo.svg": "/public/images/text-logo.svg"
+    "/public/images/text-logo.svg": "/public/images/text-logo.svg",
+    "/public/images/logo-inverse-white-house.svg": "/public/images/logo-inverse-white-house.svg",
+    "/public/images/outline-white-house.svg": "/public/images/outline-white-house.svg"
 }
