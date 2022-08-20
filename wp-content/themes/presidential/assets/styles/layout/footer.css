@@ -1,0 +1,12 @@
+.footer {
+    @apply pb-[90px] mt-[30px] relative;
+}
+
+.lang-item a {
+    @apply text-secondary-blue border-secondary-blue-transparent hover:text-red-hover hover:border-red-hover !important;
+}
+
+.footer-widget strong,
+.footer-widget p {
+    @apply text-[13px] !important;
+}

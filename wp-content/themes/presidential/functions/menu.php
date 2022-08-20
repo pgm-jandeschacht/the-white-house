@@ -6,6 +6,9 @@ function register_custom_menu() {
         'primary_menu_middle' => 'Primary Menu Middle',
         'primary_menu_right' => 'Primary Menu Right',
         'secondary_menu' => 'Secondary Menu',
+        'footer_primary_left' => 'Footer Primary Left',
+        'footer_primary_right' => 'Footer Primary Right',
+        'footer_secondary' => 'Footer Secondary',
         'social_menu' => 'Social Media Menu',
     ]);
 }

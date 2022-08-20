@@ -11,6 +11,7 @@
 @import "components/cards.css";
 @import "components/forms.css";
 @import "components/navigation.css";
+@import "layout/footer.css";
 
 @tailwind utilities;
 

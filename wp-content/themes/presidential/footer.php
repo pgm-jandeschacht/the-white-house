@@ -1,6 +1,84 @@
         </main>
         
-        <footer>
+        <footer class="footer">
+            <div class="bottom-0 absolute right-0 z-[-1] overflow-hidden">
+                <img class="-bottom-28 right-[-7.86%] relative opacity-50" width="685" height="687" src="<?php echo get_theme_file_uri('assets/images/seal.svg'); ?>">
+            </div>
+
+            <div class="relative px-[35px]">
+                <div class="mx-[-10px] flex flex-wrap justify-between pt-[90px] border-t-1 border-line">
+                    <div class="max-w-1/2 min-w-45 mb-10">
+                        <nav aria-label="Footer Primary Navigation" class="px-[10px] flex w-full max-w-83">
+                            <?php
+                                if (has_nav_menu('footer_primary_left')) {
+                                    wp_nav_menu([
+                                        'theme_location' => 'footer_primary_left',
+                                        'container' => 'false',
+                                        'menu_class' => 'columns-2 gap-[60px] min-w-45 w-full',
+                                        'li_class' => 'mb-4 flex',
+                                        'link_class' => 'font-medium text-[13px] pb-[3px] border-b-1 border-line-dark hover:text-red-hover hover:border-red-hover transition-all duration-200 ease-in-out',
+                                    ]);
+                                }
+                            ?>
+
+                            <!-- <?php
+                                if (has_nav_menu('footer_primary_right')) {
+                                    wp_nav_menu([
+                                        'theme_location' => 'footer_primary_right',
+                                        'container' => 'false',
+                                        'menu_class' => '',
+                                        'li_class' => '',
+                                        'link_class' => '',
+                                    ]);
+                                }
+                            ?> -->
+                        </nav>
+                    </div>
+
+                    <div class="w-[400px] max-w-1/2 flex justify-between">
+                        <nav class="mb-[76px] min-w-[154px] px-[10px]" aria-label="Footer Secondary Navigation">
+                            <?php
+                                if (has_nav_menu('footer_secondary')) {
+                                    wp_nav_menu([
+                                        'theme_location' => 'footer_secondary',
+                                        'container' => 'false',
+                                        'menu_class' => '',
+                                        'li_class' => 'mb-2 flex',
+                                        'link_class' => 'pb-[2px] capitalize text-[10px] border-b-1 border-transparent hover:text-red-hover hover:border-red-hover transition-all duration-200 ease-in-out',
+                                    ]);
+                                }
+                            ?>
+                        </nav>
+
+                        <div>
+                            <div class="mb-10">
+                                <?php
+                                    if (has_nav_menu('social_menu')) {
+                                        wp_nav_menu([
+                                            'theme_location' => 'social_menu',
+                                            'container' => 'false',
+                                            'menu_class' => 'flex facebook-icon',
+                                            'li_class' => 'pr-5 flex',
+                                            'link_class' => 'w-[17px] h-[17px]',
+                                        ]);
+                                    }
+                                ?>
+                            </div>
+
+                            <div class="mb-[30px] footer-widget">
+                                <?php if (is_active_sidebar('footer-widget-area')) : ?>
+                                    <?php dynamic_sidebar('footer-widget-area'); ?>
+                                <?php endif; ?>
+                            </div>
+
+                            <a href="<?php echo home_url('/') ?>">
+                                WH.GOV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- <?php if (is_active_sidebar('footer-widget-area')) : ?>
                 <?php dynamic_sidebar('footer-widget-area'); ?>
             <?php endif; ?> -->

@@ -27,6 +27,9 @@ module.exports = {
       maxWidth: {
         ...customTheme.maxWidth,
       },
+      minWidth: {
+        ...customTheme.minWidth,
+      },
       willChange: {
         ...customTheme.willChange,
       },

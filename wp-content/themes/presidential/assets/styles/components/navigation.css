@@ -3,7 +3,7 @@
 }
 
 .navigation-header {
-    @apply w-full bg-white px-10 pt-10 absolute flex justify-start;
+    @apply w-full px-10 pt-10 absolute flex justify-start;
 }
 
 .navigation-body-outer {

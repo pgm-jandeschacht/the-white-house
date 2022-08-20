@@ -5,6 +5,7 @@ module.exports = {
     "red-hover": "#9c1919",
     "white": "#fff",
     "secondary-blue": "#0064bc",
+    "secondary-blue-transparent": "#0064bc40",
     "secondary-blue-hover": "#184089",
     "line": "#e0e5ef",
     "secondary-alt": "#fffbec",
@@ -29,6 +30,10 @@ module.exports = {
     'half': '50%',
     'two-thirds': '66.666666%',
     'menu': '39%',
+    '83': '83%',
+  },
+  minWidth: {
+    '45': '45%',
   },
   willChange: {
     'transform-color': 'transform, color',
@@ -38,7 +43,8 @@ module.exports = {
   },
   spacing: {
     '1025': '-10.25%',
-    '29': '-29%'
+    '29': '-29%',
+    'seal': '-14.83%',
   },
   borderWidth: {
     '1': '1px',
