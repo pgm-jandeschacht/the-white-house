@@ -847,6 +847,10 @@ p {
     padding-left: 1.25rem;
     padding-bottom: 1.25rem;
 }
+
+.facebook-icon li:nth-of-type(2) a {
+    width: 10px !important;
+}
 /*
 ! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
 *//*
@@ -1504,6 +1508,18 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
+
+.mb-\[15px\] {
+  margin-bottom: 15px;
+}
+
 .block {
   display: block;
 }
@@ -1528,6 +1544,18 @@ video {
   height: 40px;
 }
 
+.h-\[20px\] {
+  height: 20px;
+}
+
+.h-\[11px\] {
+  height: 11px;
+}
+
+.h-\[17px\] {
+  height: 17px;
+}
+
 .min-h-\[44px\] {
   min-height: 44px;
 }
@@ -1538,6 +1566,18 @@ video {
 
 .w-\[72px\] {
   width: 72px;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[11px\] {
+  width: 11px;
+}
+
+.w-\[17px\] {
+  width: 17px;
 }
 
 .max-w-\[790px\] {
@@ -1645,6 +1685,10 @@ video {
   padding-right: 20px;
 }
 
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
 .font-mercury {
   font-family: Mercury;
 }
@@ -1678,6 +1722,10 @@ video {
   font-size: 13px;
 }
 
+.text-\[15px\] {
+  font-size: 15px;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1708,6 +1756,10 @@ video {
 
 .leading-\[132\%\] {
   line-height: 132%;
+}
+
+.leading-\[166\%\] {
+  line-height: 166%;
 }
 
 .tracking-widest {

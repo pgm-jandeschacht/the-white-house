@@ -44,17 +44,39 @@
                     </div>
             
                     <div class="navigation-body-side">
-                        <?php
-                            if (has_nav_menu('secondary_menu')) {
-                                wp_nav_menu([
-                                    'theme_location' => 'secondary_menu',
-                                    'container' => 'false',
-                                    'menu_class' => 'menu',
-                                    'li_class' => 'mb-4',
-                                    'link_class' => 'text-[13px] capitalize hover:text-red-hover border-b-1 border-transparent hover:border-red-hover transition-all duration-200 ease-in-out',
-                                ]);
-                            }
-                        ?>
+                        <div class="mb-10">
+                            <?php
+                                if (has_nav_menu('secondary_menu')) {
+                                    wp_nav_menu([
+                                        'theme_location' => 'secondary_menu',
+                                        'container' => 'false',
+                                        'menu_class' => 'menu',
+                                        'li_class' => 'mb-4',
+                                        'link_class' => 'text-[13px] capitalize hover:text-red-hover border-b-1 border-transparent hover:border-red-hover transition-all duration-200 ease-in-out',
+                                    ]);
+                                }
+                                ?>
+                        </div>
+
+                        <div class="mb-[50px]">
+                            <?php
+                                if (has_nav_menu('social_menu')) {
+                                    wp_nav_menu([
+                                        'theme_location' => 'social_menu',
+                                        'container' => 'false',
+                                        'menu_class' => 'flex facebook-icon',
+                                        'li_class' => 'pr-3 flex',
+                                        'link_class' => 'w-[17px] h-[17px]',
+                                    ]);
+                                }
+                            ?>
+                        </div>
+
+                        <div class="mb-[15px]">
+                            <?php if (is_active_sidebar('footer-widget-area')) : ?>
+                                <?php dynamic_sidebar('footer-widget-area'); ?>
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
             </div>
