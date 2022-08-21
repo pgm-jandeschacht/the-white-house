@@ -71,8 +71,8 @@
                                 <?php endif; ?>
                             </div>
 
-                            <a href="<?php echo home_url('/') ?>">
-                                WH.GOV
+                            <a href="<?php echo home_url('/') ?>" class="font-mercury text-secondary-brown text-2xl tracking-widest hover:text-red-hover transition-all duration-200 ease-in-out">
+                                <span class="font-semibold">WH</span>.GOV
                             </a>
                         </div>
                     </div>
