@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Presidential\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-13 14:13+0000\n"
-"PO-Revision-Date: 2022-08-21 17:13+0000\n"
+"PO-Revision-Date: 2022-08-21 17:12+0000\n"
 "Last-Translator: \n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: archive-president.php:13
 msgid "About the white house"
-msgstr "Acerca de la Casa Blanca"
+msgstr ""
 
 #. Description of the theme
 msgid "Clone of The White House website."
@@ -86,11 +86,11 @@ msgstr ""
 
 #: archive-administration.php:10
 msgid "The Biden-Harris Administration"
-msgstr "La Administración Biden-⁠Harris"
+msgstr ""
 
 #: header.php:16
 msgid "The White House"
-msgstr "La Casa Blanca"
+msgstr ""
 
 #: archive-administration.php:19
 msgid ""
@@ -98,7 +98,3 @@ msgid ""
 "the Executive Office of the President. Learn more about the people who carry "
 "out the priorities of the Biden-Harris Administration."
 msgstr ""
-"Miles de personas trabajan en el ala oeste, el ala este, el Gabinete, y la "
-"Oficina Ejecutiva del Presidente. Obtenga más información acerca de las "
-"personas que se encargan de llevar a cabo las prioridades de la "
-"administración Biden-Harris."

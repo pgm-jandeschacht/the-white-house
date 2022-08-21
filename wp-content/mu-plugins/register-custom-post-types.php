@@ -46,7 +46,10 @@ function register_president_post_type() {
 			'editor',
 			'thumbnail',
 		],
-        'rewrite'             => true
+        'rewrite'             => [
+            'slug' => 'about-the-white-house/presidents',
+            'with_front' => false,
+        ],
 	]);
 }
 
