@@ -29,6 +29,8 @@ function add_widgets() {
         'id' => 'side_nav_categories',
         'name' => 'Side Navigation Categories',
         'description' => 'Widget area for all categories',
+        'before_title' => '<p class="mb-[30px] text-[11px] font-medium uppercase">',
+        'after_title' => '</p>',
     ]);
 
     register_sidebar([

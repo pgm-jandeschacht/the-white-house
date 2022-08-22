@@ -28,3 +28,21 @@
 .facebook-icon li:nth-of-type(2) a {
     @apply w-[10px] !important;
 }
+
+/* Side Navigation */
+
+.side-navigation {
+    @apply pb-[50px];
+}
+
+.side-navigation ul .menu-item {
+    @apply mb-[6px] leading-[130%] ;
+}
+
+.side-navigation ul .menu-item a {
+    @apply text-[13px] capitalize border-b-1 border-secondary-blue-transparent text-secondary-blue leading-4 hover:text-red-hover hover:border-red-hover transition-all duration-200 ease-in-out;
+}
+
+.side-navigation ul .current-menu-item a {
+    @apply border-0 text-primary hover:text-primary pointer-events-none;
+}

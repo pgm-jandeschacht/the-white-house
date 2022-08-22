@@ -2,14 +2,27 @@
 
 <?php
 
-get_header(); 
+    get_header(); 
 
+    // ? Best way?
+    $page_object = get_page_by_title( 'briefing room' );
+    $page_id = $page_object->ID;
+
+    // $cat_id = get_cat_ID(single_cat_title());
+
+
+    $category = get_category( get_query_var( 'cat' ) );
+    $cat_id = $category->cat_ID;
 ?>
 
 <section class="pt-[85px] pb-[30px] mb-[30px] ">
     <div class="flex flex-col items-center px-[10px]">
+        <a href="<?php the_permalink( $page_id ); ?>" class="link-hover">
+            <?php echo get_the_title( $page_id ); ?>
+        </a>
+
         <h1 class="title-blue mt-[15px] max-w-half">
-            <?php single_post_title(); ?>
+            <?php single_cat_title(); ?>
         </h1>
     </div>
 </section>
@@ -24,6 +37,7 @@ get_header();
                         'posts_per_page' => 10,
                         'order_by' => 'date',
                         'order' => 'DESC',
+                        'cat' => $cat_id,
                     ]);
                     
                     // 'meta_query' => [
