@@ -926,6 +926,67 @@ p {
 
     font-size: 13px !important
 }
+.cta-banner {
+
+    position: relative;
+
+    margin-top: 2.5rem
+}
+
+.cta-banner-wrapper .wpforms-container form {
+
+    display: flex !important;
+
+    vertical-align: bottom !important
+}
+
+.cta-banner-wrapper .wpforms-container form .wpforms-field-container {
+
+    display: flex !important;
+
+    vertical-align: bottom !important
+}
+
+.cta-banner-wrapper .wpforms-container form .wpforms-submit-container {
+
+    display: flex !important;
+
+    vertical-align: bottom !important
+}
+
+.cta-banner-wrapper .wpforms-container form .wpforms-submit-container button {
+
+    border-width: 0px !important;
+
+    --tw-bg-opacity: 1 !important;
+
+    background-color: rgb(10 36 88 / var(--tw-bg-opacity)) !important
+}
+
+.cta-banner-wrapper .wpforms-container-full {
+
+    margin: 0px !important
+}
+
+.cta-banner-wrapper .wpforms-field-label {
+
+    margin-left: 0px !important;
+
+    margin-right: 0px !important
+}
+
+.cta-banner-wrapper .wpforms-field-medium, 
+.cta-banner-wrapper .wpforms-field-small {
+
+    margin: 0px !important;
+
+    margin-right: 10px !important
+}
+
+.cta-banner-wrapper .wpforms-field {
+
+    margin: 0px !important
+}
 /*
 ! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
 *//*
@@ -1538,14 +1599,14 @@ video {
   margin-right: -10px;
 }
 
-.mx-\[25px\] {
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-\[25px\] {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .mb-\[30px\] {
@@ -1584,12 +1645,20 @@ video {
   margin-left: 25%;
 }
 
+.ml-\[8\.333\%\] {
+  margin-left: 8.333%;
+}
+
 .ml-auto {
   margin-left: auto;
 }
 
 .mr-auto {
   margin-right: auto;
+}
+
+.mb-\[-10px\] {
+  margin-bottom: -10px;
 }
 
 .mb-12 {
@@ -1622,14 +1691,6 @@ video {
 
 .mb-\[15px\] {
   margin-bottom: 15px;
-}
-
-.mb-\[-10px\] {
-  margin-bottom: -10px;
-}
-
-.ml-\[8\.333\%\] {
-  margin-left: 8.333%;
 }
 
 .block {
@@ -1700,20 +1761,20 @@ video {
   max-width: 50%;
 }
 
-.max-w-\[790px\] {
-  max-width: 790px;
+.max-w-\[16\.666\%\] {
+  max-width: 16.666%;
 }
 
-.max-w-menu {
-  max-width: 39%;
+.max-w-\[790px\] {
+  max-width: 790px;
 }
 
 .max-w-two-thirds {
   max-width: 66.666666%;
 }
 
-.max-w-\[16\.666\%\] {
-  max-width: 16.666%;
+.max-w-menu {
+  max-width: 39%;
 }
 
 .columns-2 {
@@ -1765,6 +1826,14 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.border-\[3px\] {
+  border-width: 3px;
+}
+
 .border-t-1 {
   border-top-width: 1px;
 }
@@ -1775,10 +1844,6 @@ video {
 
 .border-b-1-5 {
   border-bottom-width: 1.5px;
-}
-
-.border-l-1 {
-  border-left-width: 1px;
 }
 
 .border-line {
@@ -1794,14 +1859,14 @@ video {
   border-color: transparent;
 }
 
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(10 36 88 / var(--tw-border-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-red-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -1827,6 +1892,16 @@ video {
 .px-\[6px\] {
   padding-left: 6px;
   padding-right: 6px;
+}
+
+.py-\[42px\] {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.px-\[50px\] {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .pt-\[85px\] {
@@ -1865,6 +1940,10 @@ video {
   padding-top: 0.5rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .pt-\[25px\] {
   padding-top: 25px;
 }
@@ -1875,18 +1954,6 @@ video {
 
 .pr-3 {
   padding-right: 0.75rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
-.pl-\[20px\] {
-  padding-left: 20px;
 }
 
 .text-center {
@@ -1931,6 +1998,10 @@ video {
   font-size: 11px;
 }
 
+.text-\[44px\] {
+  font-size: 44px;
+}
+
 .text-\[17px\] {
   font-size: 17px;
 }
@@ -1941,10 +2012,6 @@ video {
 
 .text-\[15px\] {
   font-size: 15px;
-}
-
-.text-\[44px\] {
-  font-size: 44px;
 }
 
 .font-medium {
@@ -2066,11 +2133,6 @@ body {
 .before\:h-full::before {
   content: var(--tw-content);
   height: 100%;
-}
-
-.before\:w-1::before {
-  content: var(--tw-content);
-  width: 0.25rem;
 }
 
 .before\:w-\[1px\]::before {

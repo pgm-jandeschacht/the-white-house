@@ -73,8 +73,8 @@
                         </div>
 
                         <div class="mb-[15px]">
-                            <?php if (is_active_sidebar('footer-widget-area')) : ?>
-                                <?php dynamic_sidebar('footer-widget-area'); ?>
+                            <?php if (is_active_sidebar('footer_widget_area')) : ?>
+                                <?php dynamic_sidebar('footer_widget_area'); ?>
                             <?php endif; ?>
                         </div>
                     </div>

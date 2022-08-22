@@ -16,7 +16,7 @@ function add_widgets() {
     // ]);
 
     register_sidebar([
-        'id' => 'footer-widget-area',
+        'id' => 'footer_widget_area',
         'name' => 'Footer Widget Area',
         'description' => 'Widget area for the footer',
         'before_title' => '<strong class="font-mercury font-bold text-[15px] leading-[166%] capitalize">',
@@ -37,6 +37,16 @@ function add_widgets() {
         'id' => 'side_nav_categories_mobile',
         'name' => 'Side Navigation Categories Mobile',
         'description' => 'Widget area for all categories for Mobile',
+    ]);
+
+    register_sidebar([
+        'id' => 'footer_banner_cta',
+        'name' => 'Footer Banner CTA',
+        'description' => 'Widget area for CTA banner in the footer',
+        'before_title' => '<h2 class="font-mercury text-[17px] mb-[30px] capitalize">',
+        'after_title' => '</h2>',
+        'before_widget' => '<div class="cta-banner-wrapper">',
+        'after_widget' => '</div>',
     ]);
 }
 

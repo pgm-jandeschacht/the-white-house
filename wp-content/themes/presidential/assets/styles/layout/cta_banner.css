@@ -1,0 +1,36 @@
+.cta-banner {
+    @apply mt-10 relative;
+}
+
+.cta-banner-wrapper .wpforms-container form {
+    @apply flex align-bottom !important;
+}
+
+.cta-banner-wrapper .wpforms-container form .wpforms-field-container {
+    @apply flex align-bottom !important;
+}
+
+.cta-banner-wrapper .wpforms-container form .wpforms-submit-container {
+    @apply flex align-bottom !important;
+}
+
+.cta-banner-wrapper .wpforms-container form .wpforms-submit-container button {
+    @apply border-0 bg-primary !important;
+}
+
+.cta-banner-wrapper .wpforms-container-full {
+    @apply m-0 !important;
+}
+
+.cta-banner-wrapper .wpforms-field-label {
+    @apply mx-0 !important;
+}
+
+.cta-banner-wrapper .wpforms-field-medium,
+.cta-banner-wrapper .wpforms-field-small {
+    @apply m-0 mr-[10px] !important;
+}
+
+.cta-banner-wrapper .wpforms-field {
+    @apply m-0 !important;
+}

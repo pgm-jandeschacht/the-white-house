@@ -12,6 +12,7 @@
 @import "components/forms.css";
 @import "components/navigation.css";
 @import "layout/footer.css";
+@import "layout/cta_banner.css";
 
 @tailwind utilities;
 
