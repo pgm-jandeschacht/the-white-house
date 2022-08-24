@@ -32,13 +32,13 @@ function add_widgets() {
         'before_title' => '<p class="mb-[30px] text-[11px] font-medium uppercase">',
         'after_title' => '</p>',
     ]);
-
+    
     register_sidebar([
         'id' => 'side_nav_categories_mobile',
         'name' => 'Side Navigation Categories Mobile',
         'description' => 'Widget area for all categories for Mobile',
     ]);
-
+    
     register_sidebar([
         'id' => 'footer_banner_cta',
         'name' => 'Footer Banner CTA',
@@ -47,6 +47,14 @@ function add_widgets() {
         'after_title' => '</h2>',
         'before_widget' => '<div class="cta-banner-wrapper">',
         'after_widget' => '</div>',
+    ]);
+
+    register_sidebar([
+        'id' => 'side_nav_administration',
+        'name' => 'Side Navigation Administration',
+        'description' => 'Widget area for the Administration',
+        'before_title' => '<a href="/administration" class="hidden">',
+        'after_title' => '</a>',
     ]);
 }
 

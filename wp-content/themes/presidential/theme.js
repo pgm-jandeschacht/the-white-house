@@ -3,6 +3,7 @@ module.exports = {
     "primary": "#0a2458",
     "secondary": "#edbe87",
     "red-hover": "#9c1919",
+    "red-hover-line": "#9c191940",
     "white": "#fff",
     "secondary-blue": "#0064bc",
     "secondary-blue-transparent": "#0064bc40",
@@ -10,7 +11,9 @@ module.exports = {
     "line": "#e0e5ef",
     "secondary-alt": "#fffbec",
     "secondary-brown": "#876450",
-    "line-dark": "rgba(10, 36, 88, 0.25)",
+    "line-dark": "#0a245840",
+    "line-light": "#c0dbee40",
+    "text-light": "#c0dbee",
   },
   fontSize: {
     'xxs': '0.625rem',

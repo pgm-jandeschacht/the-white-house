@@ -1,18 +1,18 @@
-            <section class="cta-banner">
-                <div class="px-[35px]">
-                    <div class="mx-[-10px] py-[42px] px-[50px] flex justify-between items-center border-[3px] border-primary rounded-2xl w-full">
-                        <div class="">
-                            <img width="135" height="107" src="<?php echo get_theme_file_uri('assets/images/the-white-house_logo-stacked.svg'); ?>">
-                        </div>    
-                    
-                        <div class="max-w-two-thirds w-full flex justify-center relative">
-                            <?php if (is_active_sidebar('footer_banner_cta')) : ?>
-                                <?php dynamic_sidebar('footer_banner_cta'); ?>
-                            <?php endif; ?>
+            <?php if (is_active_sidebar('footer_banner_cta')) : ?>
+                <section class="cta-banner">
+                    <div class="px-[35px]">
+                        <div class="mx-[-10px] py-[42px] px-[50px] flex justify-between items-center border-[3px] border-primary rounded-2xl w-full">
+                            <div>
+                                <img width="135" height="107" src="<?php echo get_theme_file_uri('assets/images/the-white-house_logo-stacked.svg'); ?>">
+                            </div>    
+                        
+                            <div class="max-w-two-thirds w-full flex justify-center relative">
+                                    <?php dynamic_sidebar('footer_banner_cta'); ?>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            <?php endif; ?>
         </main>
         
         <footer class="footer">

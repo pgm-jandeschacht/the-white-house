@@ -1,0 +1,8 @@
+.content p {
+    @apply font-mercury mb-[25px] leading-[176%];
+}
+
+.content .custom-max {
+    max-width: calc(50% - 20px);
+    margin: 0 auto;
+}
