@@ -13,6 +13,7 @@
 @import "components/navigation.css";
 @import "layout/footer.css";
 @import "layout/cta_banner.css";
+@import "blocks/repeater.css";
 
 @tailwind utilities;
 

@@ -2,6 +2,10 @@
     @apply mt-10 relative;
 }
 
+.cta-banner-wrapper {
+    @apply w-full;
+}
+
 .cta-banner-wrapper .wpforms-container form {
     @apply flex align-bottom !important;
 }

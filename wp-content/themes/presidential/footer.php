@@ -5,7 +5,7 @@
                             <img width="135" height="107" src="<?php echo get_theme_file_uri('assets/images/the-white-house_logo-stacked.svg'); ?>">
                         </div>    
                     
-                        <div class="max-w-two-thirds flex justify-center relative">
+                        <div class="max-w-two-thirds w-full flex justify-center relative">
                             <?php if (is_active_sidebar('footer_banner_cta')) : ?>
                                 <?php dynamic_sidebar('footer_banner_cta'); ?>
                             <?php endif; ?>

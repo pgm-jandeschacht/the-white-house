@@ -25,7 +25,7 @@
                 'post_type' => 'administration',
                 'posts_per_page' => -1,
                 'meta_key' => 'job_title',
-                'orderby' => 'meta_label',
+                'orderby' => 'meta_value',
                 'order' => 'ASC',
             ])
         ]); ?>

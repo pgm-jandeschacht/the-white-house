@@ -1,0 +1,39 @@
+.repeater-blocks {
+    @apply flex flex-col;
+}
+
+.repeater-block {
+    @apply flex items-center mb-[60px];
+}
+
+.repeater-block-image-wrapper {
+    @apply w-full max-w-[41.666%] min-h-[477px] z-[1] group-even:order-1 relative;
+}
+
+.repeater-block-image {
+    @apply w-[617px] h-[477px] absolute group-odd:left-0 group-even:right-0;
+}
+
+.repeater-block-image img {
+    @apply w-full h-full rounded-2xl object-cover;
+}
+
+.repeater-block-text {
+    @apply bg-secondary-alt relative max-w-[58.333%] py-[63px] pl-[198px] pr-5 group-even:pr-[198px] group-even:pl-5 min-h-[550px];
+}
+
+.repeater-block-text::before {
+    right: calc(-50vw + 615px);
+    width: calc(50vw - 610px);
+    @apply absolute content-[''] h-full top-0 bg-secondary-alt;
+}
+
+.repeater-block:nth-child(even) .repeater-block-text::before {
+    right: 0;
+    width: calc(50vw - 610px);
+    left: calc(-50vw + 610px);
+}
+
+.repeater-block-link {
+    @apply font-mercury capitalize text-[17px] pl-[23px] py-1 border-l-[3px] border-secondary-brown;
+}
