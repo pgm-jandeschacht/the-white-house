@@ -11,6 +11,7 @@ module.exports = {
     "line": "#e0e5ef",
     "secondary-alt": "#fffbec",
     "secondary-brown": "#876450",
+    "secondary-brown-darker": "#aa604f",
     "line-dark": "#0a245840",
     "line-light": "#c0dbee40",
     "text-light": "#c0dbee",

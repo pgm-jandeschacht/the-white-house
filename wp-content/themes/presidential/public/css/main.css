@@ -41,6 +41,14 @@
 
 @font-face {
     font-family: 'Mercury';
+    src: url('../fonts/mercury-book-italic.woff2') format('woff2'),
+         url('../fonts/mercury-book-italic.woff') format('woff');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Mercury';
     src: url('../fonts/mercury-semibold.woff2') format('woff2'),
          url('../fonts/mercury-semibold.woff') format('woff');
     font-style: normal;
@@ -1054,15 +1062,121 @@ p {
     font-size: 17px;
     text-transform: capitalize;
 }
+.content .custom-max {
+    max-width: calc(50% - 20px);
+    margin: 0 auto;
+}
+
 .content p {
     margin-bottom: 25px;
     font-family: Mercury;
     line-height: 176%;
 }
 
-.content .custom-max {
-    max-width: calc(50% - 20px);
-    margin: 0 auto;
+.content .big-letter::first-letter {
+    float: left;
+    margin-right: 10px;
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 600;
+    line-height: 69%;
+    letter-spacing: 0.1em;
+    --tw-text-opacity: 1;
+    color: rgb(170 96 79 / var(--tw-text-opacity));
+}
+
+.content em {
+    line-height: 176%;
+}
+
+.content h2 {
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+}
+
+.content .wp-block-image {
+    margin-bottom: 2.5rem;
+}
+
+.content .wp-block-image img {
+    border-radius: 0.5rem;
+}
+
+.content .wp-block-image figcaption {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 615px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.content blockquote {
+    margin-bottom: 30px;
+    border-left-width: 3px;
+    --tw-border-opacity: 1;
+    border-color: rgb(170 96 79 / var(--tw-border-opacity));
+    padding-left: 30px;
+}
+
+.content blockquote p {
+    margin: 0px;
+    font-style: italic;
+}
+
+.content blockquote cite {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: 132%;
+    --tw-text-opacity: 1;
+    color: rgb(170 96 79 / var(--tw-text-opacity));
+}
+
+.content .wp-block-pullquote {
+    margin-top: 60px;
+    margin-bottom: 5rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.content .wp-block-pullquote blockquote {
+    display: flex;
+    flex-direction: column;
+    border-left-width: 4px;
+    padding-left: 2.5rem;
+}
+
+.content .wp-block-pullquote blockquote p {
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 25px;
+    line-height: 176%;
+}
+
+.content .wp-block-pullquote blockquote cite {
+    text-align: left;
+}
+
+.content .wp-block-file {
+    position: relative;
+}
+
+.content .wp-block-file a:first-of-type {
+    border-bottom-width: 1px;
+    border-color: #0064bc40;
+    padding-bottom: 2px;
+    font-family: Mercury;
+    --tw-text-opacity: 1;
+    color: rgb(0 100 188 / var(--tw-text-opacity));
+}
+
+.content .wp-block-file a:nth-of-type(2) {
+    display: none;
 }
 /*
 ! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
@@ -1746,16 +1860,16 @@ video {
   margin-right: auto;
 }
 
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+
 .mb-\[-10px\] {
   margin-bottom: -10px;
 }
 
 .mb-\[25px\] {
   margin-bottom: 25px;
-}
-
-.mt-\[30px\] {
-  margin-top: 30px;
 }
 
 .ml-1 {
@@ -2080,12 +2194,12 @@ video {
   padding-right: 1.25rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
 .pb-\[1px\] {
   padding-bottom: 1px;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .pt-\[25px\] {
@@ -2196,10 +2310,6 @@ video {
 
 .leading-\[156\%\] {
   line-height: 156%;
-}
-
-.leading-\[170\%\] {
-  line-height: 170%;
 }
 
 .tracking-tight {

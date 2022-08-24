@@ -1,8 +1,72 @@
+.content .custom-max {
+    max-width: calc(50% - 20px);
+    margin: 0 auto;
+}
+
 .content p {
     @apply font-mercury mb-[25px] leading-[176%];
 }
 
-.content .custom-max {
-    max-width: calc(50% - 20px);
-    margin: 0 auto;
+.content .big-letter {
+    @apply first-letter:text-8xl first-letter:float-left first-letter:text-secondary-brown-darker first-letter:leading-[69%] first-letter:tracking-widest first-letter:font-semibold first-letter:mr-[10px];
+}
+
+.content em {
+    @apply leading-[176%];
+}
+
+.content h2 {
+    @apply text-[17px] uppercase font-medium tracking-wider leading-[140%] mb-[30px];
+}
+
+.content .wp-block-image {
+    @apply mb-10;
+}
+
+.content .wp-block-image img {
+    @apply rounded-lg;
+}
+
+.content .wp-block-image figcaption {
+    @apply my-[10px] text-left max-w-[615px] text-[13px];
+}
+
+.content blockquote {
+    @apply mb-[30px] pl-[30px] border-l-[3px] border-secondary-brown-darker;
+}
+
+.content blockquote p {
+    @apply m-0 italic;
+}
+
+.content blockquote cite {
+    @apply text-secondary-brown-darker font-medium leading-[132%] uppercase text-[11px] not-italic;
+}
+
+.content .wp-block-pullquote {
+    @apply py-0 mt-[60px] mb-20;
+}
+
+.content .wp-block-pullquote blockquote {
+    @apply border-l-4 pl-10 flex flex-col;
+}
+
+.content .wp-block-pullquote blockquote p {
+    @apply text-left mb-[30px] leading-[176%] text-[25px];
+}
+
+.content .wp-block-pullquote blockquote cite {
+    @apply text-left;
+}
+
+.content .wp-block-file {
+    @apply relative;
+}
+
+.content .wp-block-file a:first-of-type {
+    @apply text-secondary-blue border-b-1 border-secondary-blue-transparent pb-[2px] font-mercury;
+}
+
+.content .wp-block-file a:nth-of-type(2) {
+    @apply hidden;
 }
