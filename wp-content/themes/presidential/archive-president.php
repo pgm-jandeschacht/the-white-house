@@ -5,6 +5,8 @@
     // ? Best way?
     $page_object = get_page_by_title( 'the white house' );
     $page_id = $page_object->ID;
+
+    $the_post_id = 350;
 ?>
 
 <section class="pt-[85px] pb-[30px] mb-[30px] ">
@@ -14,11 +16,11 @@
         </a>
 
         <h1 class="title-blue mt-[15px]">
-            <?php _e('Presidents', 'presidential'); ?>
+            <?php echo get_the_title($the_post_id); ?>
         </h1>
 
         <p class="mt-[15px] text-[14px] md:text-[15px] font-mercury">
-            <?php _e('Learn more about the Presidents of the United States', 'presidential') ?>
+            <?php echo get_post_field('post_content', $the_post_id); ?>
         </p>
     </div>
 </section>

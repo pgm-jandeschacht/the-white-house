@@ -23,6 +23,10 @@
     @apply leading-[176%];
 }
 
+.content strong {
+    @apply font-bold;
+}
+
 .content h2 {
     @apply text-primary font-mercury text-[32px] tracking-tight leading-[132%] mb-[30px] max-w-half mx-auto;
 }
@@ -156,4 +160,43 @@
 
 .content .wp-block-group h2 {
     @apply mb-[30px] text-center;
+}
+
+.content .wp-block-cover {
+    @apply mb-[95px] h-[653px] pt-[30px] pb-[65px] flex items-end rounded-2xl overflow-hidden;
+}
+
+.content .wp-block-cover .wp-block-cover__background {
+    background: linear-gradient(1turn,rgba(0,3,13,.85) 1.02%,rgba(0,3,13,0));
+    @apply opacity-[0.85] !important;
+}
+
+.content .wp-block-cover .wp-block-cover__inner-container {
+    @apply w-full !important;
+}
+
+.content .wp-block-cover .wp-block-cover__inner-container p {
+    font-variant: small-caps;
+    @apply font-mercury text-[54px] font-semibold leading-[108%] tracking-tight mb-0 !important;
+}
+
+.content ul {
+    @apply mb-[25px] max-w-half mx-auto pl-5;
+}
+
+.content ul li {
+    @apply mb-[15px] list-disc;
+}
+
+/* Home Page content */
+.home-content ul {
+    @apply pl-5;
+}
+
+.home-content ul li {
+    @apply py-[5px] mb-5 relative text-[13px] font-medium leading-[156%];
+}
+
+.home-content ul li a {
+    @apply border-b-1 border-transparent transition-all duration-200 ease-in-out hover:text-red-hover hover:border-red-hover before:content-[''] before:bg-secondary-brown-darker before:h-full before:w-[3px] before:top-0 before:-left-5 before:absolute;
 }

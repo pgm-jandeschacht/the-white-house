@@ -42,7 +42,7 @@
 
 <section class="content">
     <div class="px-[35px]">
-        <div class="mx-[-10px] custom-max">
+        <div class="mx-[-10px]">
             <?php the_content(); ?>
         
             <span class="block mb-[25px] text-center custom-max font-mercury"><?php _e('###', 'presidential') ?></span>

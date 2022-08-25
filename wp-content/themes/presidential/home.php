@@ -24,6 +24,7 @@ get_header();
                         'posts_per_page' => 10,
                         'order_by' => 'date',
                         'order' => 'DESC',
+                        'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
                     ]);
                     
                     // 'meta_query' => [
@@ -53,10 +54,20 @@ get_header();
                             </div>
                         </li>
                     <?php endwhile;
-
-                    wp_reset_postdata(); // Needed to reset the post data
                 ?>
             </ul>
+
+            <div class="pagination">
+                <?php
+                    the_posts_pagination([
+                    'show_all'     => false, 
+                    'prev_text'    => false,
+                    'next_text'    => false,
+                    'mid_size' => 3,
+                    'end_size' => 1,
+                    ]);
+                ?>
+            </div>
         </div>
 
         <div class="max-w-[16.666%] ml-[8.333%] px-[10px]">
