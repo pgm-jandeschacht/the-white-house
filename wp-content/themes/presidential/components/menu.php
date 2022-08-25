@@ -11,31 +11,11 @@
                 <div class="navigation-body-inner">
                     <div class="navigation-body-main">
                         <?php
-                            if (has_nav_menu('primary_menu_left')) {
+                            if (has_nav_menu('primary_menu')) {
                                 wp_nav_menu([
-                                    'theme_location' => 'primary_menu_left',
+                                    'theme_location' => 'primary_menu',
                                     'container' => 'false',
-                                    'menu_class' => 'pr-[20px] w-full max-w-menu',
-                                    'li_class' => 'mb-6 flex min-h-[44px]',
-                                    'link_class' => 'text-[25px] font-mercury font-bold border-b-1 border-line-dark hover:text-red-hover hover:border-red-hover transition-all duration-200 ease-in-out',
-                                ]);
-                            }
-
-                            if (has_nav_menu('primary_menu_middle')) {
-                                wp_nav_menu([
-                                    'theme_location' => 'primary_menu_middle',
-                                    'container' => 'false',
-                                    'menu_class' => 'pr-[20px] w-full max-w-menu',
-                                    'li_class' => 'mb-6 flex min-h-[44px]',
-                                    'link_class' => 'text-[25px] font-mercury font-bold border-b-1 border-line-dark hover:text-red-hover hover:border-red-hover transition-all duration-200 ease-in-out',
-                                ]);
-                            }
-
-                            if (has_nav_menu('primary_menu_right')) {
-                                wp_nav_menu([
-                                    'theme_location' => 'primary_menu_right',
-                                    'container' => 'false',
-                                    'menu_class' => 'pr-[20px] max-w-menu',
+                                    'menu_class' => 'columns-3 gap-[80px] pr-[20px] w-full',
                                     'li_class' => 'mb-6 flex min-h-[44px]',
                                     'link_class' => 'text-[25px] font-mercury font-bold border-b-1 border-line-dark hover:text-red-hover hover:border-red-hover transition-all duration-200 ease-in-out',
                                 ]);

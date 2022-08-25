@@ -8,7 +8,7 @@ function set_login_page_styling() {
             background-repeat: no-repeat;
             background-position: center;
             width: 100%; 
-            height: 100%;
+            height: 5rem;
         }
     </style>';
     

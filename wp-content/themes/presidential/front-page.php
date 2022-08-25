@@ -183,9 +183,5 @@
     </ul>
 </section>
 
-<!-- <?php if (!is_user_logged_in()) {
-    // if user is not logged in hide some things
-} ?> -->
-
 <?php
     get_footer();

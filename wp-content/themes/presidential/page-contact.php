@@ -16,7 +16,6 @@
     <?php echo the_content(); ?>
 </section>
 
-
 <?php
 
     get_footer();

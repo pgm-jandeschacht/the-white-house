@@ -7,7 +7,11 @@
                             </div>    
                         
                             <div class="max-w-two-thirds w-full flex justify-center relative">
+                                <div class="cta-banner-wrapper">
+                                    <h2><?php _e('Stay Connected', 'presidential'); ?></h2>
+
                                     <?php dynamic_sidebar('footer_banner_cta'); ?>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -25,9 +29,9 @@
                     <div class="max-w-1/2 min-w-45 mb-10">
                         <nav aria-label="Footer Primary Navigation" class="px-[10px] flex w-full max-w-83">
                             <?php
-                                if (has_nav_menu('footer_primary_left')) {
+                                if (has_nav_menu('footer_primary')) {
                                     wp_nav_menu([
-                                        'theme_location' => 'footer_primary_left',
+                                        'theme_location' => 'footer_primary',
                                         'container' => 'false',
                                         'menu_class' => 'columns-2 gap-[60px] min-w-45 w-full',
                                         'li_class' => 'mb-4 flex',
@@ -35,18 +39,6 @@
                                     ]);
                                 }
                             ?>
-
-                            <!-- <?php
-                                if (has_nav_menu('footer_primary_right')) {
-                                    wp_nav_menu([
-                                        'theme_location' => 'footer_primary_right',
-                                        'container' => 'false',
-                                        'menu_class' => '',
-                                        'li_class' => '',
-                                        'link_class' => '',
-                                    ]);
-                                }
-                            ?> -->
                         </nav>
                     </div>
 
@@ -91,6 +83,26 @@
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="px-[35px]">
+                <div class="mx-[10px]">
+                    <?php if (is_user_logged_in()) :?>
+                        <a class="rounded-[100px] text-secondary-blue border-2 border-secondary-blue py-[18.5px] px-[25px] bg-white text-[13px] font-medium leading-[120%] text-center hover:bg-secondary-blue hover:text-white transition-all duration-200 ease-in-out" href="<?php echo wp_logout_url(home_url()); ?>">
+                            <?php _e('Log out', 'presidential') ?>
+                        </a>
+
+                        <div class="mt-8">
+                            <a class="font-medium text-[13px] pb-[3px] border-b-1 border-line-dark hover:text-red-hover hover:border-red-hover transition-all duration-200 ease-in-out" href="<?php echo get_the_permalink(398); ?>">
+                                <?php echo get_the_title(398); ?>
+                            </a>
+                        </div>
+                    <?php else : ?>
+                        <a class="rounded-[100px] text-secondary-blue border-2 border-secondary-blue py-[18.5px] px-[25px] bg-white text-[13px] font-medium leading-[120%] text-center hover:bg-secondary-blue hover:text-white transition-all duration-200 ease-in-out" href="<?php echo wp_login_url(home_url()); ?>">
+                            <?php _e('Log in/ Register', 'presidential') ?>
+                        </a>
+                    <?php endif ?>
                 </div>
             </div>
         </footer>

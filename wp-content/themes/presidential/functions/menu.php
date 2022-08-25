@@ -2,12 +2,9 @@
 
 function register_custom_menu() {
     register_nav_menus([
-        'primary_menu_left' => 'Primary Menu Left',
-        'primary_menu_middle' => 'Primary Menu Middle',
-        'primary_menu_right' => 'Primary Menu Right',
+        'primary_menu' => 'Primary Menu',
         'secondary_menu' => 'Secondary Menu',
-        'footer_primary_left' => 'Footer Primary Left',
-        'footer_primary_right' => 'Footer Primary Right',
+        'footer_primary' => 'Footer Primary',
         'footer_secondary' => 'Footer Secondary',
         'social_menu' => 'Social Media Menu',
     ]);

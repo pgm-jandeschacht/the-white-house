@@ -37,10 +37,8 @@ function add_widgets() {
         'id' => 'footer_banner_cta',
         'name' => 'Footer Banner CTA',
         'description' => 'Widget area for CTA banner in the footer',
-        'before_title' => '<h2 class="font-mercury text-[17px] mb-[30px] capitalize">',
+        'before_title' => '<h2 class="font-mercury text-[17px] mb-[30px] capitalize hidden">',
         'after_title' => '</h2>',
-        'before_widget' => '<div class="cta-banner-wrapper">',
-        'after_widget' => '</div>',
     ]);
 
     register_sidebar([
