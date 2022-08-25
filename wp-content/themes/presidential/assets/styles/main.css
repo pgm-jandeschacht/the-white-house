@@ -18,6 +18,10 @@
 
 @tailwind utilities;
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     @apply font-decimal text-primary;
 }

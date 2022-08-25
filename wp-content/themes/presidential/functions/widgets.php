@@ -9,12 +9,6 @@ add_action('after_setup_theme', 'phi_theme_support');
 
 
 function add_widgets() {
-    // register_sidebar([
-    //     'id' => 'footer-widget-area',
-    //     'name' => 'Footer Widget Area',
-    //     'desciption' => 'Widget area for the footer',
-    // ]);
-
     register_sidebar([
         'id' => 'footer_widget_area',
         'name' => 'Footer Widget Area',
@@ -53,8 +47,16 @@ function add_widgets() {
         'id' => 'side_nav_administration',
         'name' => 'Side Navigation Administration',
         'description' => 'Widget area for the Administration',
-        'before_title' => '<a href="/administration" class="hidden">',
-        'after_title' => '</a>',
+        'before_title' => '<p class="hidden">',
+        'after_title' => '</p>',
+    ]);
+
+    register_sidebar([
+        'id' => 'side_nav_presidents',
+        'name' => 'Side Navigation Presidents',
+        'description' => 'Widget area for the Presidents',
+        'before_title' => '<p class="hidden">',
+        'after_title' => '</p>',
     ]);
 }
 

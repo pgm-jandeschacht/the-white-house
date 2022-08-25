@@ -4,10 +4,18 @@
 }
 
 .content p {
-    @apply font-mercury mb-[25px] leading-[176%];
+    @apply font-mercury mb-[25px] leading-[176%] max-w-half mx-auto;
 }
 
-.content .big-letter {
+.content p a {
+    @apply text-secondary-blue border-b-1 border-secondary-blue-transparent pb-[2px] font-mercury;
+}
+
+.content .has-large-font-size {
+    @apply text-[25px] leading-[166%] !important;
+}
+
+.content .has-drop-cap {
     @apply first-letter:text-8xl first-letter:float-left first-letter:text-secondary-brown-darker first-letter:leading-[69%] first-letter:tracking-widest first-letter:font-semibold first-letter:mr-[10px];
 }
 
@@ -16,11 +24,20 @@
 }
 
 .content h2 {
-    @apply text-[17px] uppercase font-medium tracking-wider leading-[140%] mb-[30px];
+    @apply text-primary font-mercury text-[32px] tracking-tight leading-[132%] mb-[30px] max-w-half mx-auto;
+}
+
+.content h2.has-large-font-size {
+    font-variant: small-caps;
+    @apply font-semibold leading-[108%] max-w-half mx-auto text-[32px] !important;
+}
+
+.content h3 {
+    @apply text-[17px] uppercase font-medium tracking-wider leading-[140%] mb-[30px] max-w-half mx-auto;
 }
 
 .content .wp-block-image {
-    @apply mb-10;
+    @apply mb-10 max-w-half mx-auto;
 }
 
 .content .wp-block-image img {
@@ -32,11 +49,11 @@
 }
 
 .content blockquote {
-    @apply mb-[30px] pl-[30px] border-l-[3px] border-secondary-brown-darker;
+    @apply mb-[30px] pl-[30px] border-l-[3px] border-secondary-brown-darker max-w-half mx-auto;
 }
 
 .content blockquote p {
-    @apply m-0 italic;
+    @apply m-0 italic max-w-full;
 }
 
 .content blockquote cite {
@@ -44,15 +61,15 @@
 }
 
 .content .wp-block-pullquote {
-    @apply py-0 mt-[60px] mb-20;
+    @apply py-0 mt-[60px] mb-20 max-w-half mx-auto;
 }
 
 .content .wp-block-pullquote blockquote {
-    @apply border-l-4 pl-10 flex flex-col;
+    @apply border-l-4 pl-10 flex flex-col max-w-full;
 }
 
 .content .wp-block-pullquote blockquote p {
-    @apply text-left mb-[30px] leading-[176%] text-[25px];
+    @apply text-left mb-[30px] leading-[176%] text-[25px] max-w-full;
 }
 
 .content .wp-block-pullquote blockquote cite {
@@ -60,13 +77,83 @@
 }
 
 .content .wp-block-file {
-    @apply relative;
+    @apply relative max-w-half mx-auto;
 }
 
-.content .wp-block-file a:first-of-type {
+.content .wp-block-file a {
     @apply text-secondary-blue border-b-1 border-secondary-blue-transparent pb-[2px] font-mercury;
 }
 
-.content .wp-block-file a:nth-of-type(2) {
-    @apply hidden;
+.content h3 a {
+    @apply text-[17px] uppercase font-medium tracking-wider leading-[140%] mb-[30px] text-secondary-blue border-b-1 border-secondary-blue-transparent max-w-half mx-auto;
+}
+
+.content .wp-block-separator {
+    @apply mx-auto mb-10 max-w-[154px] w-[60%] bg-line;
+}
+
+.content .wp-block-buttons {
+    @apply mb-[30px] max-w-half mx-auto;
+}
+
+.content .wp-block-buttons .wp-block-button {
+    @apply max-w-half mx-auto;
+}
+
+.content .wp-block-buttons .wp-block-button .wp-block-button__link {
+    @apply rounded-[100px] !important;
+    @apply text-secondary-blue border-2 border-secondary-blue py-[18.5px] px-[25px] bg-white text-[13px] font-medium leading-[120%] text-center hover:bg-secondary-blue hover:text-white transition-all duration-200 ease-in-out;
+}
+
+.content .wp-block-gallery {
+    @apply w-full;
+}
+
+.content .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image) {
+    margin: 0 0.75rem 0.75rem 0;
+    width: calc(50% - 1.5rem);
+}
+
+.content .wp-block-columns {
+    @apply mb-[30px] mx-auto gap-0 !important;
+}
+
+.content .wp-block-columns .wp-block-column {
+    @apply w-1/4 !important;
+}
+
+.content .wp-block-columns .wp-block-column .wp-block-image {
+    @apply max-w-full mx-4 mb-0 block !important;
+}
+
+.content .wp-block-columns .wp-block-column .wp-block-image a {
+    @apply flex items-center;
+}
+
+.content .wp-block-columns .wp-block-column .wp-block-image a img {
+    @apply mx-auto w-20 mb-[10px];
+}
+
+.content .wp-block-columns .wp-block-column .wp-block-image figcaption {
+    @apply text-center;
+}
+
+.content .wp-block-columns .wp-block-column .wp-block-image figcaption a {
+    @apply text-center inline font-mercury text-[16px] font-bold border-b-1 border-secondary-blue-transparent transition-all duration-200 ease-in-out text-secondary-blue leading-[176%];
+}
+
+.content .wp-block-group {
+    @apply mb-[30px];
+}
+
+.content .wp-block-group figure {
+    @apply flex justify-center mb-5;
+}
+
+.content .wp-block-group figure img {
+    @apply w-[85px];
+}
+
+.content .wp-block-group h2 {
+    @apply mb-[30px] text-center;
 }

@@ -95,6 +95,7 @@ function register_administration_post_type() {
             'title',
             'editor',
             'thumbnail',
+            'excerpt'
         ],
         'rewrite'             => true
     ]);
