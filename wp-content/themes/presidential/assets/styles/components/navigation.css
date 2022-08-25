@@ -17,7 +17,7 @@
 
 .navigation-body-main {
     min-width: calc(75% - 50px);
-    @apply mr-[100px] flex justify-between;
+    @apply mr-[33px] flex justify-between;
 }
 
 .navigation-body-side {

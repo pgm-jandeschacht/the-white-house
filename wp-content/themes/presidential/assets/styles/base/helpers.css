@@ -1,0 +1,9 @@
+.content #menu-side-navigation-administration,
+.content #menu-side-navigation-presidents {
+    @apply pl-0 max-w-full !important;
+}
+
+.content #menu-side-navigation-administration li,
+.content #menu-side-navigation-presidents li {
+    @apply list-none;
+}

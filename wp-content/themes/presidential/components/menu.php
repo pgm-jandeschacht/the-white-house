@@ -15,8 +15,8 @@
                                 wp_nav_menu([
                                     'theme_location' => 'primary_menu',
                                     'container' => 'false',
-                                    'menu_class' => 'columns-3 gap-[80px] pr-[20px] w-full',
-                                    'li_class' => 'mb-6 flex min-h-[44px]',
+                                    'menu_class' => 'columns-3 gap-[60px] pr-[20px] w-full',
+                                    'li_class' => 'mb-6 flex w-full',
                                     'link_class' => 'text-[25px] font-mercury font-bold border-b-1 border-line-dark hover:text-red-hover hover:border-red-hover transition-all duration-200 ease-in-out',
                                 ]);
                             }
