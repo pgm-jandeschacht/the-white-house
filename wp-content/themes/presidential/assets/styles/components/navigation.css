@@ -12,7 +12,7 @@
 }
 
 .navigation-body-inner {
-    @apply w-full flex;
+    @apply w-full flex flex-col lg:flex-row;
 }
 
 .navigation-body-main {
@@ -22,7 +22,7 @@
 
 .navigation-body-side {
     min-width: calc(25% - 50px);
-    @apply border-l-[1px] border-line pl-5 pb-5;
+    @apply lg:border-l-[1px] lg:border-line lg:pl-5 lg:pb-5;
 }
 
 .facebook-icon li:nth-of-type(2) a {

@@ -25,7 +25,7 @@
             </div>
 
             <div class="relative px-[35px]">
-                <div class="mx-[-10px] flex flex-wrap justify-between pt-[90px] border-t-1 border-line">
+                <div class="mx-[-10px] flex flex-col md:flex-row justify-between pt-[90px] border-t-1 border-line">
                     <div class="max-w-1/2 min-w-45 mb-10">
                         <nav aria-label="Footer Primary Navigation" class="px-[10px] flex w-full max-w-83">
                             <?php
@@ -33,7 +33,7 @@
                                     wp_nav_menu([
                                         'theme_location' => 'footer_primary',
                                         'container' => 'false',
-                                        'menu_class' => 'columns-2 gap-[60px] min-w-45 w-full',
+                                        'menu_class' => 'md:columns-2 md:gap-[60px] min-w-45 w-full',
                                         'li_class' => 'mb-4 flex',
                                         'link_class' => 'font-medium text-[13px] pb-[3px] border-b-1 border-line-dark hover:text-red-hover hover:border-red-hover transition-all duration-200 ease-in-out',
                                     ]);
@@ -42,7 +42,7 @@
                         </nav>
                     </div>
 
-                    <div class="w-[400px] max-w-1/2 flex justify-between">
+                    <div class="w-[400px] max-w-1/2 flex flex-col md:flex-row justify-between">
                         <nav class="mb-[76px] min-w-[154px] px-[10px]" aria-label="Footer Secondary Navigation">
                             <?php
                                 if (has_nav_menu('footer_secondary')) {
@@ -86,7 +86,7 @@
                 </div>
             </div>
 
-            <div class="px-[35px]">
+            <div class="px-[35px] mt-8 md:mt-0">
                 <div class="mx-[10px]">
                     <?php if (is_user_logged_in()) :?>
                         <a class="rounded-[100px] text-secondary-blue border-2 border-secondary-blue py-[18.5px] px-[25px] bg-white text-[13px] font-medium leading-[120%] text-center hover:bg-secondary-blue hover:text-white transition-all duration-200 ease-in-out" href="<?php echo wp_logout_url(home_url()); ?>">

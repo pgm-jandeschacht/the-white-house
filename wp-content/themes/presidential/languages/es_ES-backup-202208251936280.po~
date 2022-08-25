@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Presidential\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-13 14:13+0000\n"
-"PO-Revision-Date: 2022-08-25 19:37+0000\n"
+"PO-Revision-Date: 2022-08-25 19:35+0000\n"
 "Last-Translator: \n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -15,37 +15,41 @@ msgstr ""
 "X-Loco-Version: 2.6.2; wp-6.0.1\n"
 "X-Domain: presidential"
 
-#: single.php:48
-msgid "###"
-msgstr "###"
+#: archive-president.php:13
+msgid "About the white house"
+msgstr "Acerca de la Casa Blanca"
 
 #. Description of the theme
 msgid "Clone of The White House website."
-msgstr "Clon del sitio web de la Casa Blanca."
+msgstr ""
 
 #: header.php:34
 msgid "Close"
 msgstr "Cerrar"
 
+#. Name of the template
+msgid "Content with Sidebar"
+msgstr ""
+
+#. Name of the template
+msgid "Content without Sidebar"
+msgstr ""
+
 #. Author URI of the theme
 msgid "https://wordpress.org/"
-msgstr "https://wordpress.org/"
+msgstr ""
 
 #. URI of the theme
 msgid "https://wordpress.org/themes/twentytwenty/"
-msgstr "https://wordpress.org/themes/twentytwenty/"
+msgstr ""
 
 #. Author of the theme
 msgid "Jan Deschacht"
 msgstr "Jan Deschacht"
 
-#: footer.php:103
-msgid "Log in/ Register"
-msgstr "Iniciar sesión / registrarse"
-
-#: footer.php:93
-msgid "Log out"
-msgstr "cerrar sesión"
+#: archive-president.php:21
+msgid "Learn more about the Presidents of the United States"
+msgstr "Más información sobre los presidentes de los Estados Unidos"
 
 #: header.php:76
 msgid "Logout"
@@ -55,11 +59,7 @@ msgstr "cerrar sesión"
 msgid "Menu"
 msgstr "Menú"
 
-#: single.php:75
-msgid "Next"
-msgstr "Siguiente"
-
-#: single-president.php:27 components/cards-president.php:15
+#: components/cards-president.php:15
 msgid "president of the United States"
 msgstr "Presidente de los estados unidos"
 
@@ -70,23 +70,23 @@ msgstr ""
 "\n"
 "Presidencial"
 
-#: single-president.php:18 single-president.php:48
+#: archive-president.php:17
 msgid "Presidents"
 msgstr "Presidentes"
+
+#: front-page.php:8 front-page.php:9
+msgid "Read more"
+msgstr "Lee mas"
 
 #: header.php:80
 msgid "Register"
 msgstr "Registrarse"
 
-#: footer.php:11
-msgid "Stay Connected"
-msgstr "Mantente conectado"
-
-#: single-president.php:27 components/cards-president.php:15
+#: components/cards-president.php:15
 msgid "The"
 msgstr "El"
 
-#: single-administration.php:18 single-administration.php:48
+#: archive-administration.php:10
 msgid "The Biden-Harris Administration"
 msgstr "La Administración Biden-⁠Harris"
 
@@ -94,6 +94,13 @@ msgstr "La Administración Biden-⁠Harris"
 msgid "The White House"
 msgstr "La Casa Blanca"
 
-#: front-page.php:15
-msgid "We're investing back in the American people"
-msgstr "Estamos invirtiendo de nuevo en el pueblo estadounidense"
+#: archive-administration.php:19
+msgid ""
+"Thousands of people work in the West Wing, the East Wing, the Cabinet, and "
+"the Executive Office of the President. Learn more about the people who carry "
+"out the priorities of the Biden-Harris Administration."
+msgstr ""
+"Miles de personas trabajan en el ala oeste, el ala este, el Gabinete, y la "
+"Oficina Ejecutiva del Presidente. Obtenga más información acerca de las "
+"personas que se encargan de llevar a cabo las prioridades de la "
+"administración Biden-Harris."

@@ -20,7 +20,7 @@
                     </a>
                 </div>
     
-                <button @click="open = ! open" class="group wrapper flex justify-center md:relative md:bottom-auto md:right-auto md:h-full">
+                <button @click="open = ! open" class="group wrapper flex justify-center md:relative md:bottom-auto md:right-auto md:h-full" :class="open ? 'bg-primary text-white' : ''">
                     <div class="flex w-full h-full flex-col justify-center">
                         <span class="burger-inner-wrapper group-hover:scale-110 group-hover:translate-y-[-2px]">
                             <span class="burger-top" :class="open ? 'hidden' : 'block'"></span>

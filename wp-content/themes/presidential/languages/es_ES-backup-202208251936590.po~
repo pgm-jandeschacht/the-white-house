@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Presidential\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-13 14:13+0000\n"
-"PO-Revision-Date: 2022-08-21 17:12+0000\n"
+"PO-Revision-Date: 2022-08-25 19:36+0000\n"
 "Last-Translator: \n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -15,9 +15,9 @@ msgstr ""
 "X-Loco-Version: 2.6.2; wp-6.0.1\n"
 "X-Domain: presidential"
 
-#: archive-president.php:13
-msgid "About the white house"
-msgstr ""
+#: single.php:48
+msgid "###"
+msgstr "###"
 
 #. Description of the theme
 msgid "Clone of The White House website."
@@ -26,14 +26,6 @@ msgstr ""
 #: header.php:34
 msgid "Close"
 msgstr "Cerrar"
-
-#. Name of the template
-msgid "Content with Sidebar"
-msgstr ""
-
-#. Name of the template
-msgid "Content without Sidebar"
-msgstr ""
 
 #. Author URI of the theme
 msgid "https://wordpress.org/"
@@ -45,56 +37,63 @@ msgstr ""
 
 #. Author of the theme
 msgid "Jan Deschacht"
-msgstr ""
+msgstr "Jan Deschacht"
 
-#: archive-president.php:21
-msgid "Learn more about the Presidents of the United States"
-msgstr ""
+#: footer.php:103
+msgid "Log in/ Register"
+msgstr "Iniciar sesión / registrarse"
+
+#: footer.php:93
+msgid "Log out"
+msgstr "cerrar sesión"
 
 #: header.php:76
 msgid "Logout"
-msgstr ""
+msgstr "cerrar sesión"
 
 #: header.php:30
 msgid "Menu"
-msgstr "menú"
+msgstr "Menú"
 
-#: components/cards-president.php:15
+#: single.php:75
+msgid "Next"
+msgstr "Siguiente"
+
+#: single-president.php:27 components/cards-president.php:15
 msgid "president of the United States"
-msgstr ""
+msgstr "Presidente de los estados unidos"
 
 #. Name of the theme
 #: functions/login.php:27
 msgid "Presidential"
 msgstr ""
+"\n"
+"Presidencial"
 
-#: archive-president.php:17
+#: single-president.php:18 single-president.php:48
 msgid "Presidents"
-msgstr ""
-
-#: front-page.php:8 front-page.php:9
-msgid "Read more"
-msgstr "Lee mas"
+msgstr "Presidentes"
 
 #: header.php:80
 msgid "Register"
-msgstr ""
+msgstr "Registrarse"
 
-#: components/cards-president.php:15
+#: footer.php:11
+msgid "Stay Connected"
+msgstr "Mantente conectado"
+
+#: single-president.php:27 components/cards-president.php:15
 msgid "The"
-msgstr ""
+msgstr "El"
 
-#: archive-administration.php:10
+#: single-administration.php:18 single-administration.php:48
 msgid "The Biden-Harris Administration"
-msgstr ""
+msgstr "La Administración Biden-⁠Harris"
 
 #: header.php:16
 msgid "The White House"
 msgstr "La Casa Blanca"
 
-#: archive-administration.php:19
-msgid ""
-"Thousands of people work in the West Wing, the East Wing, the Cabinet, and "
-"the Executive Office of the President. Learn more about the people who carry "
-"out the priorities of the Biden-Harris Administration."
-msgstr ""
+#: front-page.php:15
+msgid "We're investing back in the American people"
+msgstr "Estamos invirtiendo de nuevo en el pueblo estadounidense"

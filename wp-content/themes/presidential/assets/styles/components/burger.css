@@ -1,9 +1,10 @@
 .wrapper {
+    @apply md:bg-white md:text-primary !important;
     @apply w-[70px] h-[70px] md:h-auto md:w-[50px] ml-[4px] z-50 px-[0.375rem] py-1 rounded-[50%] md:rounded-none shadow-menu md:shadow-none fixed right-[15px] bottom-[15px] border-[3px] border-primary md:border-0 bg-white md:bg-transparent;
 }
 
 .burger-inner-wrapper {
-    @apply relative transition-all duration-200 ease-in-out;
+    @apply relative transition-all duration-200 ease-in-out hidden md:block;
 }
 
 .burger-top {
